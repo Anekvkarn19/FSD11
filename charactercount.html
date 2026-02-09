@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- we need textarea to count the number of characters in it and we need a button to trigger the function that will count the characters and display the result in a paragraph  -->
+    <textarea id="msg" onkeyup="countchar()"></textarea>
+    <p id="count">
+
+    </p>
+    <script>
+        function countchar()
+        {
+            let text=document.getElementById("msg").value;//we need to get the value of the textarea and store it in a variable
+            let count=text.length;//we need to get the length of the text and store it in a variable
+            document.getElementById("count").innerHTML=count;
+        }
+    </script>
+</body>
+</html>
